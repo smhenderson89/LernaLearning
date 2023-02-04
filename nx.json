@@ -21,24 +21,13 @@
   },
   "targetDefaults": {
     "build": {
-      "inputs": [
-        "prod",
-        "^prod"
-      ],
-      "dependsOn": [
-        "^build"
-      ]
+      "dependsOn": ["^build"]
     },
     "test": {
-      "inputs": [
-        "default",
-        "^prod"
-      ]
+      "inputs": ["default","^prod"]
     },
     "dev": {
-      "dependsOn": [
-        "^build"
-      ]
+      "dependsOn": ["^build"]
     }
   }
 }
